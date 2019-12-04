@@ -28,6 +28,7 @@ R: Guardar los request en una tabla y correr un CRON job para validar cuales est
 
 Implementación de la base de datos:
 
+``` bash
 CREATE TABLE customer_conekta(
    id INTEGER PRIMARY KEY,
    firstname VARCHAR (50) NULL,
@@ -93,3 +94,4 @@ CREATE TABLE payment_direction(
     FOREIGN KEY (customer_conekta_id) REFERENCES customer_conekta (id),
     created_on TIMESTAMP NOT NULL
 );
+```
